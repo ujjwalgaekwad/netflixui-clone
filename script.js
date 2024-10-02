@@ -159,14 +159,32 @@ startButton.addEventListener("click", () => {
 
 //Events
 let display = 0;
+//Icons in Questions and answers
+let cutIcon = document.getElementById("cut-icon");
+let addIcon = document.getElementById("add-icon");
+let cutIcon2 = document.getElementById("cut-icon2");
+let addIcon2 = document.getElementById("add-icon2");
+let cutIcon3 = document.getElementById("cut-icon3");
+let addIcon3 = document.getElementById("add-icon3");
+let cutIcon4 = document.getElementById("cut-icon4");
+let addIcon4 = document.getElementById("add-icon4");
+let cutIcon5 = document.getElementById("cut-icon5");
+let addIcon5 = document.getElementById("add-icon5");
+let cutIcon6 = document.getElementById("cut-icon6");
+let addIcon6 = document.getElementById("add-icon6");
+
 questionOne.addEventListener("click", () => {  //Answer-1 
     if(display == 1){
         answerOne.style.display = "block";
+        cutIcon.style.display = "block";
+        addIcon.style.display = "none";
         displayHeight.style.height = "140vh";
         display = 0;
     }
     else {
         answerOne.style.display = "none";
+        cutIcon.style.display = "none";
+        addIcon.style.display = "block";
         displayHeight.style.height = "110vh";
         display = 1;
     }
@@ -175,9 +193,13 @@ questionOne.addEventListener("click", () => {  //Answer-1
 questionTwo.addEventListener("click", () => { //Answer-2
    if (display == 1) {
        answerTwo.style.display = "block";
+       cutIcon2.style.display = "block";
+       addIcon2.style.display = "none";
        display = 0;
    } else {
        answerTwo.style.display = "none";
+       cutIcon2.style.display = "none";
+       addIcon2.style.display = "block";
        display = 1;
    }
 });
@@ -185,9 +207,13 @@ questionTwo.addEventListener("click", () => { //Answer-2
 questionThree.addEventListener("click", () => { //Answer - 3
     if ( display == 1) {
         answerThree.style.display = "block";
+        cutIcon3.style.display = "block";
+        addIcon3.style.display = "none";
         display = 0;
     } else {
         answerThree.style.display = "none";
+        cutIcon3.style.display = "none";
+        addIcon3.style.display = "block";
         display = 1;
     }
 })
@@ -195,9 +221,13 @@ questionThree.addEventListener("click", () => { //Answer - 3
 questionFour.addEventListener("click", () => { //Answer - 4
     if ( display == 1) {
         answerFour.style.display = "block";
+        cutIcon4.style.display = "block";
+        addIcon4.style.display = "none";
         display = 0;
     } else {
         answerFour.style.display = "none";
+        cutIcon4.style.display = "none";
+        addIcon4.style.display = "block";
         display = 1;
     }
 })
@@ -205,9 +235,13 @@ questionFour.addEventListener("click", () => { //Answer - 4
 questionFive.addEventListener("click", () => { //Answer - 5
     if ( display == 1) {
         answerFive.style.display = "block";
+        cutIcon5.style.display = "block";
+        addIcon5.style.display = "none";
         display = 0;
     } else {
         answerFive.style.display = "none";
+        cutIcon5.style.display = "none";
+        addIcon5.style.display = "block";
         display = 1;
     }
 })
@@ -215,24 +249,31 @@ questionFive.addEventListener("click", () => { //Answer - 5
 questionSix.addEventListener("click", () => { //Answer - 6
     if ( display == 1) {
         answerSix.style.display = "block";
+        cutIcon6.style.display = "block";
+        addIcon6.style.display = "none";
         display = 0;
     } else {
         answerSix.style.display = "none";
+        cutIcon6.style.display = "none";
+        addIcon6.style.display = "block";
         display = 1;
     }
 })
 
 //Bottom validation
-let bottomParagraph = document.getElementById("paragraph2");
-let bottomEmailValidation = document.querySelector(".validation2").value.trim();
-let bottomEmailDesign = document.querySelector(".validation2");
-let buttomButton = document.querySelector(".button2");
-function validation2() {
-    if (bottomEmailValidation == "") {
-        bottomParagraph.innerText = "Email require.";
-        bottomEmailDesign.style.border = "2px solid red";
+//email validation 
+let bottomEmailParagraph = document.getElementById("email-paragraph2");
+let bottomEmailValidation = document.getElementById("email2").value.trim();
+let bottonEmailDesign = document.getElementById("email2");
+let bottonStartButton = document.getElementById("signup-button2");
+function bottomEmailvalidates() {
+    if (emailValidation == "") {
+        bottomEmailParagraph.style.display = "block";
+        bottonEmailDesign.style.border = "1px solid #df2c14";
     }
 }
-buttomButton.addEventListener("click", () => {
-    validation2();
+//first Validation
+bottonStartButton.addEventListener("click", () => {
+    bottomEmailvalidates();
 })
+

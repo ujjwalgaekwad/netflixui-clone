@@ -17,7 +17,7 @@
 
 header {
     height: 700px;
-    background-image: url(images/MainHeroSection.jpg);
+    background-image: url(images/main.jpg);
     background-size: cover;
     color: #fff;
 }
@@ -110,13 +110,13 @@ select {
     font-family: var(--font-family--);
 }
 /* Validation */
-#email-paragraph {
+#email-paragraph, #email-paragraph2 {
     color: rgb(191, 25, 25);
     font-size: 0.9rem;
     display: none;
 }
 
-#email {
+#email,#email2 {
     width: 24vw;
     padding: 1vw;
     margin-top: 3vh;
@@ -137,7 +137,7 @@ input::placeholder:active {
     left: 0px;
 }
 
-.main .main2, button {
+#signup-button, #signup-button2 {
     border: none;
     font-size: 1.3rem;
     margin-top: 3vh;
@@ -147,7 +147,7 @@ input::placeholder:active {
     background-color: rgb(220, 0, 0);
 }
 
-.main .main2, button:hover {
+#signup-button,#signup-button2:hover {
     background-color: rgba(220, 0, 0, 0.9);
 }
 
@@ -299,23 +299,28 @@ input::placeholder:active {
     font-size: 1.3rem;
 }
 
-.answer1 {
-   height: 20vh;
+.question i {
+    font-weight: 100;
+}
+.answer1, #cut-icon {
    display: none;
 }
-.answer2 {
+
+.answer2, #cut-icon2 {
     display: none;
  }
-.answer3 {
+
+.answer3, #cut-icon3 {
     display: none;
  }
- .answer4 {
-    display: none;
-  }
-.answer5 {
+
+.answer4, #cut-icon4{
     display: none;
 }
-.answer6 {
+.answer5, #cut-icon5 {
+    display: none;
+}
+.answer6, #cut-icon6 {
     display: none;
 }
   
