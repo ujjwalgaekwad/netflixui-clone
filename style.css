@@ -290,6 +290,7 @@ input::placeholder:active {
     display: flex;
     justify-content: center;
     text-align: start;
+    text-align: center;
 }
 
 .QandA p {
@@ -299,28 +300,25 @@ input::placeholder:active {
     font-size: 1.3rem;
 }
 
-.question i {
-    font-weight: 100;
-}
-.answer1, #cut-icon {
+.answerOne, #cut-icon {
    display: none;
 }
 
-.answer2, #cut-icon2 {
+.answerTwo, #cut-icon2 {
     display: none;
  }
 
-.answer3, #cut-icon3 {
+.answerThree, #cut-icon3 {
     display: none;
  }
 
-.answer4, #cut-icon4{
+.answerFour, #cut-icon4{
     display: none;
 }
-.answer5, #cut-icon5 {
+.answerFive, #cut-icon5 {
     display: none;
 }
-.answer6, #cut-icon6 {
+.answerSix, #cut-icon6 {
     display: none;
 }
   

@@ -67,21 +67,19 @@ let laptopHeadingOne = document.querySelector(".lap-headingOne");
 let laptopHeadingTwo = document.querySelector(".lap-headingTwo");
 let kidHeadingOne = document.querySelector(".kid-headingOne");
 let kidHeadingTwo = document.querySelector(".kid-headingTwo");
-//question-Answer
-let questionHeading = document.querySelector(".question-heading");
-let displayHeight = document.querySelector(".ques-section");
-let questionOne = document.getElementById("question1");
-let answerOne = document.querySelector(".answer1");
-let questionTwo = document.getElementById("question2");
-let answerTwo = document.querySelector(".answer2");
-let questionThree = document.getElementById("question3");
-let answerThree = document.querySelector(".answer3");
-let questionFour = document.getElementById("question4");
-let answerFour = document.querySelector(".answer4");
-let questionFive = document.getElementById("question5");
-let answerFive = document.querySelector(".answer5");
-let questionSix = document.getElementById("question6");
-let answerSix = document.querySelector(".answer6");
+//question-Answer-Languages
+let languaeQuestionOne = document.getElementById("quesOne");
+let languaeAnswerOne = document.getElementById("ansOne");
+let languaeQuestionTwo = document.getElementById("quesTwo");
+let languaeAnswerTwo = document.getElementById("ansTwo");
+let languaeQuestionThree = document.getElementById("quesThree");
+let languaeAnswerThree = document.getElementById("ansThree");
+let languaeQuestionFour = document.getElementById("quesFour");
+let languaeAnswerFour = document.getElementById("ansFour");
+let languaeQuestionFive = document.getElementById("quesFive");
+let languaeAnswerFive = document.getElementById("ansFive");
+let languaeQuestionSix = document.getElementById("quesSix");
+let languaeAnswerSix = document.getElementById("ansSix");
 
 
 languageSelect.addEventListener("change", (event) => {
@@ -105,18 +103,18 @@ const setLanguage = (language) => {
         kidHeadingOne.innerText = translations.english.kidFirstHeading;
         kidHeadingTwo.innerText = translations.english.kidSecondHeading;
         //questions
-        questionHeading.innerText = translations.english.questionHeading;
-        questionOne.innerText = translations.english.firstQuestion;
-        questionTwo.innerText = translations.english.secondQuestion;
-        questionThree.innerText = translations.english.thirdQuestion;
-        questionFour.innerText = translations.english.fourthQuestion;
-        questionFive.innerText = translations.english.fivethQuestion;
-        questionSix.innerText = translations.english.sixthQuestion;
+        languaeQuestionOne.innerText = translations.english.firstQuestion;
+        languaeQuestionTwo.innerText = translations.english.secondQuestion;
+        languaeQuestionThree.innerText = translations.english.thirdQuestion;
+        languaeQuestionFour.innerText = translations.english.fourthQuestion;
+        languaeQuestionFive.innerText = translations.english.fivethQuestion;
+        languaeQuestionSix.innerText = translations.english.sixthQuestion;
+      
 
     } else if (language == "hindi") {
         signInButton.innerText = translations.hindi.signInButton;
         HeroHeadingOne.innerText = translations.hindi.headingOne;
-        HeroHeadingTwo.innerText = translations.hindi.headingTwo;
+        HeroHeadingTwo.innerText = translations.hindi.headingTwo; 
         HeroHeadingThree.innerText = translations.hindi.headingThree;
         email.innerText = translations.hindi.email;
         getStartButton.innerText = translations.hindi.getStartedLanguage;
@@ -129,13 +127,13 @@ const setLanguage = (language) => {
         kidHeadingOne.innerText = translations.hindi.kidFirstHeading;
         kidHeadingTwo.innerText = translations.hindi.kidSecondHeading;
         //questions
-        questionHeading.innerText = translations.hindi.questionHeading;
-        questionOne.innerText = translations.hindi.firstQuestion;
-        questionTwo.innerText = translations.hindi.secondQuestion;
-        questionThree.innerText = translations.hindi.thirdQuestion;
-        questionFour.innerText = translations.hindi.fourthQuestion;
-        questionFive.innerText = translations.hindi.fivethQuestion;
-        questionSix.innerText = translations.hindi.sixthQuestion;
+        languaeQuestionOne.innerText = translations.hindi.firstQuestion;
+        languaeQuestionTwo.innerText = translations.hindi.secondQuestion;
+        languaeQuestionThree.innerText = translations.hindi.thirdQuestion;
+        languaeQuestionFour.innerText = translations.hindi.fourthQuestion;
+        languaeQuestionFive.innerText = translations.hindi.fivethQuestion;
+        languaeQuestionSix.innerText = translations.hindi.sixthQuestion;
+        
     }
 }
 //email validation 
@@ -156,6 +154,19 @@ startButton.addEventListener("click", () => {
 })
 
 //Question answers 
+let buttonQuestionOne = document.querySelector(".questionOne");
+let answerOne = document.querySelector(".answerOne");
+let buttonQuestionTwo = document.querySelector(".questionTwo");
+let answerTwo = document.querySelector(".answerTwo");
+let buttonQuestionThree = document.querySelector(".questionThree");
+let answerThree = document.querySelector(".answerThree");
+let buttonQuestionFour = document.querySelector(".questionFour");
+let answerFour = document.querySelector(".answerFour");
+let buttonQuestionFive = document.querySelector(".questionFive");
+let answerFive = document.querySelector(".answerFive");
+let buttonQuestionSix = document.querySelector(".questionSix");
+let answerSix = document.querySelector(".answerSix");
+
 
 //Events
 let display = 0;
@@ -173,24 +184,21 @@ let addIcon5 = document.getElementById("add-icon5");
 let cutIcon6 = document.getElementById("cut-icon6");
 let addIcon6 = document.getElementById("add-icon6");
 
-questionOne.addEventListener("click", () => {  //Answer-1 
-    if(display == 1){
+buttonQuestionOne.addEventListener("click", () => {  //Answer-1 
+    if (display == 1) {
         answerOne.style.display = "block";
         cutIcon.style.display = "block";
         addIcon.style.display = "none";
-        displayHeight.style.height = "140vh";
         display = 0;
-    }
-    else {
+    } else {
         answerOne.style.display = "none";
         cutIcon.style.display = "none";
         addIcon.style.display = "block";
-        displayHeight.style.height = "110vh";
         display = 1;
     }
 });
 
-questionTwo.addEventListener("click", () => { //Answer-2
+buttonQuestionTwo.addEventListener("click", () => { //Answer-2
    if (display == 1) {
        answerTwo.style.display = "block";
        cutIcon2.style.display = "block";
@@ -204,7 +212,7 @@ questionTwo.addEventListener("click", () => { //Answer-2
    }
 });
 
-questionThree.addEventListener("click", () => { //Answer - 3
+buttonQuestionThree.addEventListener("click", () => { //Answer - 3
     if ( display == 1) {
         answerThree.style.display = "block";
         cutIcon3.style.display = "block";
@@ -218,7 +226,7 @@ questionThree.addEventListener("click", () => { //Answer - 3
     }
 })
 
-questionFour.addEventListener("click", () => { //Answer - 4
+buttonQuestionFour.addEventListener("click", () => { //Answer - 4
     if ( display == 1) {
         answerFour.style.display = "block";
         cutIcon4.style.display = "block";
@@ -232,7 +240,7 @@ questionFour.addEventListener("click", () => { //Answer - 4
     }
 })
 
-questionFive.addEventListener("click", () => { //Answer - 5
+buttonQuestionFive.addEventListener("click", () => { //Answer - 5
     if ( display == 1) {
         answerFive.style.display = "block";
         cutIcon5.style.display = "block";
@@ -246,7 +254,7 @@ questionFive.addEventListener("click", () => { //Answer - 5
     }
 })
 
-questionSix.addEventListener("click", () => { //Answer - 6
+buttonQuestionSix.addEventListener("click", () => { //Answer - 6
     if ( display == 1) {
         answerSix.style.display = "block";
         cutIcon6.style.display = "block";
