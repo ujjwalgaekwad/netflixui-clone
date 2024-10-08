@@ -13,70 +13,80 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <div class="nav-signin">
             <h1 id="logo">Netflix</h1>
-            <div class="container">
-                <div class="content">
-                    <h1 id="sign-in">Sign In</h1>
-                    <input id="email" type="email" placeholder="Email or mobile number">
-                    <p id="email-para"></p>
-                    <p id="signin-code"></p>
-                    <input id="password" type="password" placeholder="Password">
-                    <p id="password-para"></p>
-                    <button class="signup-btn" id="signup-btn" action="index.html" onclick="cheeking()">Sign In</button>
-                    <!-- <p>or</p> -->
-                    <div id="bottom-btn">
-                        <a id="b-btn" href="#" action="index.html" onclick="signInCode()">Use a sign-in code </a>
-                    </div>
+            <div class="valid">
+                <div class="container">
+                    <div class="content">
+                        <h1 id="sign-in">Sign In</h1>
+                        <input id="email" type="email" placeholder="Email or mobile number">
+                        <p id="email-para"></p>
+                        <p id="signin-code"></p>
+                        <input id="password" type="password" placeholder="Password">
+                        <p id="password-para"></p>
+                        <button class="signup-btn" id="signup-btn" action="index.html" onclick="cheeking()">Sign
+                            In</button>
+                        <!-- <p>or</p> -->
+                        <button id="bottom-btn">
+                            <a id="b-btn" href="#" action="index.html" onclick="signInCode()">Use a sign-in code </a>
+                        </button>
 
-                    <p id="f-password">Fotgot password?</p>
-                    <h4>New to Netflix? <a class="singup-now" id="singup-now" href="index.html">Sign up now</a></h4>
-                    <h5>This page is protected by Google trCAPTCHA to ensure you're not a bot. <a class="learn-more"
-                            onclick="learnMoreDetails()">Learn more.</a></h5>
-                    <p id="learn-more">The information collected by Google reCAPTCHA is subject to the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google).</p>
+                        <p id="f-password">Fotgot password?</p>
+                        <h4>New to Netflix? <a class="singup-now" id="singup-now" href="index.html">Sign up now</a></h4>
+                        <h5>This page is protected by Google trCAPTCHA to ensure you're not a bot. <a class="learn-more"
+                                onclick="learnMoreDetails()">Learn more.</a></h5>
+                        <p id="learn-more">The information collected by Google reCAPTCHA is subject to the Google <a
+                                href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+                                href="https://policies.google.com/terms">Terms of Service</a>, and is used for
+                            providing, maintaining, and improving the reCAPTCHA service and for general security
+                            purposes (it is not used for personalised advertising by Google).</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <footer class="footer">
-            <div class="footer-details">
-                <ul>
-                    Questions? Call 000-800-919-1694
-                    <a href="#">FAQ</a>
-                    <a href="#">Cookie Preference</a>
-                    <select name="" id="language">
-                        <option lang="en" label="English" value="english" selected="">English</option>
-                        <option lang="hi" label="हिन्दी" value="hindi">हिन्दी</option>
-                    </select>
-                </ul>
-                <ul>
-                    <a href="#">Help Centre</a>
-                    <a href="#">Corporate Information</a>
-                </ul>
-                <ul>
-                    <a href="#">Term of Use</a>
-                </ul>
-                <ul>
-                    <a href="#">Privacy</a>
-                </ul>
-            </div>
-            <div class="footer-mobile">
-                <h3 class="footer-m-heading">Questions? Call 000-800-919-1694</h3>
-                <ul>
-                    <a href="#">FAQ</a>
-                    <a href="#">Cookie Preference</a>
-                    <a href="#">Help Centre</a>
-                    <a href="#">Corporate Information</a>
-                    <a href="#">Term of Use</a>
-                    <a href="#">Privacy</a>
-                    <select name="" id="language">
-                        <option lang="en" label="English" value="english" selected="">English</option>
-                        <option lang="hi" label="हिन्दी" value="hindi">हिन्दी</option>
-                    </select>
-                </ul>
+        </header>
+            <footer class="footer">
+                <div class="footer-details">
+                    <ul>
+                        Questions? Call 000-800-919-1694
+                        <a href="#">FAQ</a>
+                        <a href="#">Cookie Preference</a>
+                        <select name="" id="language" class="language1">
+                            <option lang="en" label="English" value="english" selected="">English</option>
+                            <option lang="hi" label="हिन्दी" value="hindi">हिन्दी</option>
+                        </select>
+                    </ul>
+                    <ul>
+                        <a href="#">Help Centre</a>
+                        <a href="#">Corporate Information</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Term of Use</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Privacy</a>
+                    </ul>
+                </div>
+            <div class="footer-container">
+                <div class="mobile">
+                    <ul>
+                        Questions? Call 000-800-919-1694
+                        <a href="#">FAQ</a>
+                        <a href="#">Cookie Preference</a>
+                        <a href="#">Help Centre</a>
+                        <a href="#">Corporate Information</a>
+                        <a href="#">Term of Use</a>
+                        <a href="#">Privacy</a>
+                        <select name="" id="language" class="language1">
+                            <option lang="en" label="English" value="english" selected="">English</option>
+                            <option lang="hi" label="हिन्दी" value="hindi">हिन्दी</option>
+                        </select>
+                    </ul>
+                </div>
             </div>
         </footer>
-    </main>
+        </div>
+    <!-- </main> -->
     <script src="signin.js"></script>
 </body>
 
