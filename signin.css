@@ -68,7 +68,7 @@
 .content h5 {
     margin-top: 15px;
     font-size: 0.85rem;
-    width: 90%;
+    width: 100%;
     color: gray;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -230,10 +230,10 @@ ul a {
         background-color: black;
     }
     .container {
-        padding: 0px;
+        padding: 10px;
     }
     .content {
-        padding: 8vh 0vw;
+        padding: 6vh 0vw;
         font-size: 1rem;
     }
     .privacy {
