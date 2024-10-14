@@ -15,8 +15,8 @@
 #logo {
     color: rgb(184, 10, 10);
     font-size: 40px;
-    margin-left: 100px;
-    padding: 15px;
+    padding: 24px;
+    margin: -8px 0px 0px -8px;
 }
 
 #sign-in {
@@ -188,6 +188,7 @@ p {
 .footer {
     height: 400px;
     background-color: black;
+    overflow: hidden;
 }
 
 .footer-details {
@@ -225,9 +226,10 @@ ul a {
 
 /* Media queries */
 @media (max-width: 645px) {
-    #logo {
-        display: none;
-    }
+    /* #logo {
+        font-size: 1rem;
+        text-align: start;
+    } */
     .nav-signin {
         height: 600px;
         background-image: none;
@@ -237,7 +239,7 @@ ul a {
         width: 100%;
     }
     .content { 
-        padding: 8vh 1vw; 
+        padding: 2vh 1vw; 
     }
     .privacy {
         display: none;
