@@ -80,11 +80,11 @@ select {
 
 /* hero main section */
 .main {
-   padding-top: 10vw;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #heading1 {
@@ -109,14 +109,17 @@ select {
     font-weight: 400;
     font-family: var(--font-family--);
 }
+
 /* Validation */
-#email-paragraph, #email-paragraph2 {
+#email-paragraph,
+#email-paragraph2 {
     color: rgb(191, 25, 25);
     font-size: 0.9rem;
     display: none;
 }
 
-#email,#email2 {
+#email,
+#email2 {
     width: 24vw;
     padding: 1vw;
     margin-top: 3vh;
@@ -127,7 +130,7 @@ select {
 }
 
 input::placeholder {
-    color: gray; 
+    color: gray;
     opacity: 1;
     font-size: 1rem;
 }
@@ -137,17 +140,20 @@ input::placeholder:active {
     left: 0px;
 }
 
-#signup-button, #signup-button2 {
+#signup-button,
+#signup-button2 {
     border: none;
     font-size: 1.3rem;
     margin-top: 3vh;
     padding: 1vw;
     border-radius: 0.3vw;
     color: #e6dddd;
+    cursor: pointer;
     background-color: rgb(220, 0, 0);
 }
 
-#signup-button,#signup-button2:hover {
+#signup-button,
+#signup-button2:hover {
     background-color: rgba(220, 0, 0, 0.9);
 }
 
@@ -186,7 +192,7 @@ input::placeholder:active {
     padding: 0vw 10vw;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 8vw;
 }
 
 .tv-img {
@@ -204,6 +210,7 @@ input::placeholder:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8vw;
 }
 
 .download-img {
@@ -220,7 +227,7 @@ input::placeholder:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 8vw;
 }
 
 .laptop-img {
@@ -238,6 +245,7 @@ input::placeholder:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8vw;
 }
 
 .kids-img {
@@ -252,32 +260,39 @@ input::placeholder:active {
     font-size: 2vw;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .ques-section {
     height: 110vh;
     background-color: black;
     color: #fff;
     text-align: center;
 }
+
 .QandA {
     margin-top: 5vh;
 }
+
 .QandA .question {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 0;
 }
+
 .QandA button {
-    padding: 28px;
-    margin: 4px;
+    padding: 26px;
+    margin: 3px 0px;
     width: 80vw;
     border: none;
+    cursor: pointer;
     background-color: rgba(53, 53, 53, 0.9);
     text-align: start;
     color: var(--font-color--);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     display: flex;
     justify-content: space-between;
-    transition: 0.3s ease-in-out;
+    /* transition: 0.3s ease-in-out; */
 }
 
 .QandA button:hover {
@@ -290,42 +305,59 @@ input::placeholder:active {
     display: flex;
     justify-content: center;
     text-align: start;
-    text-align: center;
+    transition: 2s ease-in;
 }
 
 .QandA p {
+    /* padding: 24px 0px; */
     width: 80vw;
     background-color: rgba(53, 53, 53, 0.9);
     color: var(--font-color--);
     font-size: 1.3rem;
+    transition: 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+    animation: 1s infinite alternate slidein
 }
 
-.answerOne, #cut-icon {
-   display: none;
+.answerOne,
+#cut-icon {
+    display: none;
 }
 
-.answerTwo, #cut-icon2 {
+.answerTwo,
+#cut-icon2 {
     display: none;
- }
 
-.answerThree, #cut-icon3 {
-    display: none;
- }
+}
 
-.answerFour, #cut-icon4{
+.answerThree,
+#cut-icon3 {
     display: none;
+
 }
-.answerFive, #cut-icon5 {
+
+.answerFour,
+#cut-icon4 {
     display: none;
+
 }
-.answerSix, #cut-icon6 {
+
+.answerFive,
+#cut-icon5 {
     display: none;
+
 }
-  
-  /* footer */
+
+.answerSix,
+#cut-icon6 {
+    display: none;
+
+}
+
+/* footer */
 #heading-footer {
     font-size: 22px;
 }
+
 .footer-one {
     height: 400px;
     background-color: black;
@@ -333,6 +365,7 @@ input::placeholder:active {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
@@ -378,10 +411,25 @@ ul div p {
     background-color: #222222;
 }
 
-.mobile-view {
-    display: none;
-}
+/* Responsive design */
 
-.footer-mobile {
-    display: none;
+@media (max-width: 700px) {
+    #heading1 {
+        font-family: var(--Head-font-family--);
+        font-size: 3.2vw;
+        font-weight: 900;  
+    }
+    
+    #heading2 {
+        font-size: 1.3vw;
+        font-weight: 550; 
+    }
+    
+    #heading3 {
+        font-size: 1rem;
+        font-weight: 400;  
+    }
+    .QandA button {
+        width: 90vw;
+    }
 }

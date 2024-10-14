@@ -187,6 +187,7 @@ let addIcon6 = document.getElementById("add-icon6");
 buttonQuestionOne.addEventListener("click", () => {  //Answer-1 
     if (display == 1) {
         answerOne.style.display = "block";
+        answerOne.style.height = "300";
         cutIcon.style.display = "block";
         addIcon.style.display = "none";
         display = 0;
@@ -277,7 +278,7 @@ let bottonStartButton = document.getElementById("signup-button2");
 function bottomEmailvalidates() {
     if (emailValidation == "") {
         bottomEmailParagraph.style.display = "block";
-        bottonEmailDesign.style.border = "1px solid #df2c14";
+        bottonEmailDesign.style.border = "1.5px solid #df2c14";
     }
 }
 //first Validation
