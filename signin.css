@@ -8,7 +8,7 @@
 
 .nav-signin {
     height: 700px;
-    background-image: url(images/Signin.jpg);
+    background-image: url(Img/Signin.jpg);
     background-size: cover;
 }
 
@@ -36,6 +36,7 @@
 
 #header {
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .content {
@@ -192,6 +193,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer ul a {
@@ -217,9 +219,6 @@ ul a {
 #language:hover {
     background-color: #222222;
 }
-.mobile {
-    display: none;
-}
 
 /* Media queries */
 @media (max-width: 700px) {
@@ -233,18 +232,11 @@ ul a {
     .container {
         padding: 0px;
     }
-    .footer-details {
-      display: none;
+    .content {
+        padding: 8vh 0vw;
+        font-size: 1rem;
     }
-    .mobile {
-        display: block;
+    .privacy {
+        display: none;
     }
-    .footer-container {
-        padding: 0vh 5vw;
-    }
-    .footer {
-        height: 450px;
-        color: #fff;
-    }
-    
 }
