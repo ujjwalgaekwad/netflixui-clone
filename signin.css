@@ -150,14 +150,14 @@ h4 {
 }
 
 p { 
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
     cursor: pointer;
-}
+} 
 
 #bottom-btn {
     height: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
     color: #fff;
     background-color: rgba(245, 241, 241, 0.2);
     border-radius: 4px;
@@ -224,6 +224,7 @@ ul a {
     background-color: #222222;
 }
 
+
 /* Media queries */
 @media (max-width: 645px) {
     /* #logo {
@@ -231,7 +232,7 @@ ul a {
         text-align: start;
     } */
     .nav-signin {
-        height: 600px;
+        height: 800px;
         background-image: none;
         background-color: black;
     }
@@ -239,9 +240,13 @@ ul a {
         width: 100%;
     }
     .content { 
-        padding: 2vh 1vw; 
+        padding: 0.7vh 1vw; 
     }
     .privacy {
         display: none;
+    }
+    .line {
+        height: 4px;
+        background-color: #949090;
     }
 }
