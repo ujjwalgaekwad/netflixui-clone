@@ -21,6 +21,7 @@
 
 #sign-in {
     color: #fff;
+    font-weight: 700;
 }
 .valid {
     display: flex;
@@ -74,24 +75,26 @@
     font-optical-sizing: auto;
     font-weight: 300;
 }
-
-#learn-more {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-}
-
-/* .content a:hover {
-    color: #949090;
-}  */
-
-.content .learn-more {
-    color: blue;
+.learn-more {
+    border: none;
+    background: transparent;
+    color: #0071eb;
     font-size: 0.8rem;
     cursor: pointer;
 }
 
-
+.learn-more-paragraph {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 0.82rem;
+    color: #8c8c8c;
+    text-align: start;
+}
+.learn-more-paragraph a {
+    font-size: 0.75rem;
+    color: #0080ff;
+}
 
 #inside-nav {
     margin-top: 30px;
@@ -122,21 +125,12 @@
 #password-para {
     display: none;
 }
-#learn-more {
-    font-size: 0.82rem;
-    color: #8c8c8c;
-    text-align: start;
-    display: none;
-}
+
 h4 {
     color: #8c8c8c;
     font-weight: 300;
 }
 
-#learn-more a {
-    font-size: 0.75rem;
-    color: rgb(43, 43, 195);
-}
 .signup-btn {
     margin-top: 22px;
     height: 40px;
@@ -147,6 +141,10 @@ h4 {
     border: none;
     font-weight: 600;
     cursor: pointer;
+    transition: ease-in 0.1s;
+}
+.signup-btn:hover {
+   background-color: rgba(205,4,4,0.8);
 }
 
 p { 
@@ -221,7 +219,7 @@ ul a {
 }
 
 #language:hover {
-    background-color: #222222;
+    background-color: #222222 
 }
 
 
@@ -230,8 +228,13 @@ ul a {
     /* #logo {
         font-size: 1.7rem;
     } */
+    #logo img {
+        height: 35px;
+        padding: 24px 24px 5px 24px;
+        margin: -8px 0px 0px -8px;
+    }
     .nav-signin {
-        height: 800px;
+        height: 715px;
         background-image: none;
         background-color: black;
     }
@@ -247,5 +250,9 @@ ul a {
     .line {
         height: 1px;
         background-color: #949090;
+    }
+    .footer {
+        height: 350px;
+        color: #8c8c8c;
     }
 }
